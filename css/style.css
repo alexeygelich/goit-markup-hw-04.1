@@ -127,6 +127,23 @@ img {
   margin-right: 30px;
 }
 
+.auth-nav__link::before {
+  content: '';
+  margin-right: 10px;
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.auth-nav__link--mail::before {
+  background-image: url('../img/mail.svg');
+}
+
+.auth-nav__link--phone::before {
+  background-image: url('../img/phone.svg');
+}
+
 .auth-nav_icon {
   margin-right: 10px;
 }
