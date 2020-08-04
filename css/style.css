@@ -164,7 +164,10 @@ img {
 /* Hero */
 
 .hero-section {
-  background-color: var(--bg-text-color);
+  max-width: 1600px;
+  height: 600px;
+  background-image: linear-gradient(var(--bg-text-color), var(--bg-text-color)),
+    url('../img/header-img.jpg');
 }
 
 .hero {
