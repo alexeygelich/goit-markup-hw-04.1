@@ -7,6 +7,7 @@
   --bg-footer-color: #2f303a;
   --bg-team-color: #f5f4fa;
   --address-text-color: rgba(255, 255, 255, 0.6);
+  --background-social: rgba(255, 255, 255, 0.1);
   --cards-bg-color: rgba(33, 150, 243, 0.9);
   --filter-bg-color: #f5f4fa;
 }
@@ -527,6 +528,40 @@ img {
 .join__social {
   display: flex;
   justify-content: space-between;
+}
+
+.join__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.join__link {
+  display: block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--background-social);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.join__link:hover {
+  background-color: var(--accent-text-color);
+}
+
+.join__social--instagram {
+  background-image: url('../img/instagram-2.svg');
+}
+
+.join__social--twitter {
+  background-image: url('../img/twitter-1.svg');
+}
+
+.join__social--facebook {
+  background-image: url('../img/facebook-1.svg');
+}
+
+.join__social--linkedin {
+  background-image: url('../img/linkedin-1.svg');
 }
 
 /* Subscribe */
