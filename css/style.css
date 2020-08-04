@@ -379,11 +379,40 @@ img {
   text-align: center;
 }
 
-.team__social {
+.team-social {
   margin-left: 32px;
   margin-right: 32px;
   display: flex;
   justify-content: space-between;
+}
+
+.team-social__link {
+  display: block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.team-social__link:hover {
+  background-color: var(--accent-text-color);
+}
+
+.team-social__link--instagram {
+  background-image: url('../img/instagram.svg');
+}
+
+.team-social__link--twitter {
+  background-image: url('../img/twitter.svg');
+}
+
+.team-social__link--facebook {
+  background-image: url('../img/facebook.svg');
+}
+
+.team-social__link--linkedin {
+  background-image: url('../img/linkedin.svg');
 }
 
 .team__text {
