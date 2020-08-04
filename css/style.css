@@ -221,6 +221,34 @@ img {
   width: calc((100% - 90px) / 4);
 }
 
+.work__item::before {
+  content: '';
+  display: inline-block;
+  width: 270px;
+  height: 120px;
+  background-color: var(--bg-team-color);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.work__item--sputnik::before {
+  background-image: url('../img/sputnik.svg');
+}
+
+.work__item--time::before {
+  background-image: url('../img/time.svg');
+}
+
+.work__item--comp::before {
+  background-image: url('../img/comp.svg');
+}
+
+.work__item--astronavt::before {
+  background-image: url('../img/astronaut-1.svg');
+}
+
 .work {
   display: flex;
 }
