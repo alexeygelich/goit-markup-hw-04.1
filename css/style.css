@@ -130,17 +130,17 @@ img {
 
 .auth-nav__link--icon {
   margin-right: 10px;
-  --color1: var(--primery-text-color);
+  --color2: var(--primery-text-color);
 }
 
 .auth-nav__link--mail {
   width: 16px;
-  height: 11px;
+  height: 11.2px;
 }
 
 .auth-nav__link--phone {
   width: 10px;
-  height: 15px;
+  height: 14.94px;
 }
 
 .auth-nav__link {
@@ -150,6 +150,7 @@ img {
 
   font-weight: 500;
   letter-spacing: 0.02em;
+  text-decoration: none;
 }
 
 .auth-nav__link:hover,
@@ -159,7 +160,7 @@ img {
 
 .auth-nav__link:hover .auth-nav__link--icon,
 .auth-nav__link:focus .auth-nav__link--icon {
-  --color1: var(--accent-text-color);
+  --color2: var(--accent-text-color);
   --color5: var(--accent-text-color);
 }
 
@@ -219,51 +220,37 @@ img {
   padding-bottom: 94px;
 }
 
+.work__item--icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  background-color: var(--bg-team-color);
+  height: 120px;
+}
+
+.work__item--sputnik {
+  height: 70px;
+}
+
+.work__item--time {
+  height: 70px;
+}
+
+.work__item--comp {
+  width: 70px;
+}
+
+.work__item--astronaut {
+  height: 70px;
+}
+
 .work__item {
   width: calc((100% - 90px) / 4);
 }
 
-.work__item::before {
-  content: '';
-  display: inline-block;
-  width: 270px;
-  height: 120px;
-  background-color: var(--bg-team-color);
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 4px;
-  margin-bottom: 30px;
-}
-
-.work__item--sputnik::before {
-  background-image: url('../img/sputnik.svg');
-}
-
-.work__item--time::before {
-  background-image: url('../img/time.svg');
-}
-
-.work__item--comp::before {
-  background-image: url('../img/comp.svg');
-}
-
-.work__item--astronavt::before {
-  background-image: url('../img/astronaut-1.svg');
-}
-
 .work {
   display: flex;
-}
-
-.work__img {
-  display: flex;
-  margin-bottom: 30px;
-  justify-content: center;
-  align-items: center;
-  height: 120px;
-  border-radius: 4px;
-
-  background-color: var(--filter-bg-color);
 }
 
 .work__item:not(:last-child) {
