@@ -128,29 +128,24 @@ img {
   margin-right: 30px;
 }
 
-.auth-nav__link::before {
-  content: '';
+.auth-nav__link--icon {
   margin-right: 10px;
+  --color1: var(--primery-text-color);
+}
+
+.auth-nav__link--mail {
   width: 16px;
-  height: 16px;
-  background-repeat: no-repeat;
-  background-position: center;
+  height: 11px;
 }
 
-.auth-nav__link--mail::before {
-  background-image: url('../img/mail.svg');
-}
-
-.auth-nav__link--phone::before {
-  background-image: url('../img/phone.svg');
-}
-
-.auth-nav_icon {
-  margin-right: 10px;
+.auth-nav__link--phone {
+  width: 10px;
+  height: 15px;
 }
 
 .auth-nav__link {
   display: flex;
+  align-items: center;
   color: var(--primery-text-color);
 
   font-weight: 500;
@@ -160,6 +155,12 @@ img {
 .auth-nav__link:hover,
 .auth-nav__link:focus {
   color: var(--accent-text-color);
+}
+
+.auth-nav__link:hover .auth-nav__link--icon,
+.auth-nav__link:focus .auth-nav__link--icon {
+  --color1: var(--accent-text-color);
+  --color5: var(--accent-text-color);
 }
 
 /* Hero */
