@@ -391,22 +391,7 @@ img {
   --color1: white;
 }
 
-.team-social__link--instagram {
-  width: 20px;
-  height: 20px;
-}
-
-.team-social__link--twitter {
-  width: 20px;
-  height: 20px;
-}
-
-.team-social__link--facebook {
-  width: 20px;
-  height: 20px;
-}
-
-.team-social__link--linkedin {
+.team-social__link--icon {
   width: 20px;
   height: 20px;
 }
@@ -530,21 +515,25 @@ img {
 }
 
 .join__link {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
   background-color: var(--background-social);
   background-repeat: no-repeat;
   background-position: center;
+  --color1: var(--white-color);
 }
 
 .join__link:hover {
   background-color: var(--accent-text-color);
 }
 
-.join__social--instagram {
-  background-image: url('../img/instagram-2.svg');
+.join__social--icon {
+  width: 20px;
+  height: 20px;
 }
 
 .join__social--twitter {
