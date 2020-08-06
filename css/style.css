@@ -133,11 +133,6 @@ img {
   --color2: var(--primery-text-color);
 }
 
-.auth-nav__link--mail {
-  width: 16px;
-  height: 11.2px;
-}
-
 .auth-nav__link--phone {
   width: 10px;
   height: 14.94px;
@@ -443,11 +438,16 @@ img {
 .clients__item:hover {
   color: var(--accent-text-color);
   border-color: var(--accent-text-color);
+  --color1: var(--accent-text-color);
 }
 
-/* .clients__item:last-child {
-  margin-right: 0;
-} */
+.clients__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+}
 
 /* Footer */
 .footer {
