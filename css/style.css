@@ -376,7 +376,9 @@ img {
 }
 
 .team-social__link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -386,22 +388,27 @@ img {
 
 .team-social__link:hover {
   background-color: var(--accent-text-color);
+  --color1: white;
 }
 
 .team-social__link--instagram {
-  background-image: url('../img/instagram.svg');
+  width: 20px;
+  height: 20px;
 }
 
 .team-social__link--twitter {
-  background-image: url('../img/twitter.svg');
+  width: 20px;
+  height: 20px;
 }
 
 .team-social__link--facebook {
-  background-image: url('../img/facebook.svg');
+  width: 20px;
+  height: 20px;
 }
 
 .team-social__link--linkedin {
-  background-image: url('../img/linkedin.svg');
+  width: 20px;
+  height: 20px;
 }
 
 .team__text {
