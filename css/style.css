@@ -639,7 +639,6 @@ img {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
-  padding-bottom: 20px;
   border: 1px solid #eeeeee;
   box-sizing: border-box;
   text-decoration: none;
@@ -658,6 +657,8 @@ img {
 }
 
 .cards__link {
+  display: block;
+  padding-bottom: 20px;
   text-decoration: none;
 }
 
